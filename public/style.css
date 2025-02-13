@@ -1,0 +1,119 @@
+body {
+    background: #98ff003d;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    color: black;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    width: 750px;
+    height: 560px;
+    filter: drop-shadow(2px 4px 7px rgba(0, 0, 0, 0.3));
+    background-color: #181818;
+
+    flex-wrap: wrap;
+    border-radius: 50px;
+    padding-top: 60px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form_row:nth-of-type(1),
+.form_row:nth-of-type(3),
+.form_row:nth-of-type(5) {
+    margin-left: 0;
+}
+
+input {
+    width: 280px;
+    height: 35px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+}
+
+label {
+    font-size: 14px;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.button {
+    margin-top: 20px;
+    padding: 0 53px;
+    background: #f5951a;
+    font-size: 17px;
+
+    text-transform: uppercase;
+    color: #181818;
+    font-weight: 600;
+
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    position: relative;
+    transition: all 0.6s;
+}
+
+.button:hover {
+    background: #feb960;
+}
+
+.border {
+    padding: 20px;
+    border: none;
+    outline: 2px solid transparent;
+    background-image: linear-gradient(to bottom, #f5951a 1px, transparent 1px),
+    linear-gradient(to bottom, #f5951a 1px, transparent 1px),
+    linear-gradient(
+            to right,
+            #f5951a 1px,
+            transparent 1px,
+            transparent calc(100% - 1px),
+            #f5951a calc(100% - 1px)
+    ),
+    linear-gradient(to top, #b3aaaa 1px, transparent 1px);
+    background-position: -100% 0, 200% 0, 0 100%, 0 100%;
+    background-size: 50% 100%, 50% 100%, 100% 1px, 100% 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.4s ease-out 0.6s,
+    background-position 0.6s ease-in;
+}
+
+.border:focus {
+    background-position: 0 0, 100% 0, 0 100%, 0 100%;
+    background-size: 51% 100%, 51% 100%, 100% 100%, 100% 100%;
+    transition: background-size 0.4s ease-in,
+    background-position 0.6s ease-out 0.4s;
+    background-image: linear-gradient(to bottom, #f5951a 1px, transparent 1px),
+    linear-gradient(to bottom, #f5951a 1px, transparent 1px),
+    linear-gradient(
+            to right,
+            #f5951a 1px,
+            transparent 1px,
+            transparent calc(100% - 1px),
+            #f5951a calc(100% - 1px)
+    ),
+    linear-gradient(to top, #f5951a 1px, transparent 1px);
+}
+
+a {
+    text-decoration: none;
+
+    width: 180px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+
+    justify-content: center;
+}

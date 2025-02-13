@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/style.css"/>
+</head>
+<body>
+<h1>Sign in</h1>
+<form action="/login" method="post">
+    <div class="form_row">
+        <label for="userEmail">Email</label><br/>
+        <input
+                class="border"
+                type="email"
+                id="userEmail"
+                name="userEmail"
+        /><br/>
+    </div>
+    <div class="form_row">
+        <label for="password">Password</label><br/>
+        <input
+                class="border"
+                type="password"
+                id="password"
+                name="password" required
+        /><br/><br/>
+    </div>
+
+    <input class="button" type="submit" value="Sign in" required/>
+    <h2>OR</h2>
+    <a href="/register" class="button">REGISTRATION</a>
+</form>
+<script src="../public/index.js"></script>
+</body>
+</html>
